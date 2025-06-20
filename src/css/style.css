@@ -14,7 +14,7 @@ body {
 
 #default-scene {
     min-width: 100vw;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     border: solid 3px #008fcc
 }
 
@@ -22,4 +22,19 @@ body {
     /* min-width: 100vw; */
     min-height: 500px;
     border: solid 3px lime;
+}
+
+/** Tooling UI **/
+#tool-inputs-container {
+    width: 300px;
+    border: #eee;
+    font-size: 0.7rem;
+}
+
+.tool-controls-ui-title {
+    font-variant: italic;
+}
+
+.tools-controls-ui-form {
+    display: none;
 }

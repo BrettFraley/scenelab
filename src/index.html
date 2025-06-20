@@ -29,11 +29,7 @@
             <p>tools</p>
             
             <div class="grid">
-                <div>
-                    <p>Text Overlays</p>
-                    <button class="outline" id="brb-button"> BRB... </button>
-                </div>
-
+                
                 <div>
                     <p>Create</p>
                     <!--  TODO button dropdown thing  -->
@@ -42,20 +38,45 @@
                     <ul>
                     <!--  Create div, with settings/params via user UI,
                           and append to #default-scene -> #default-text-overlay-wrapper -->
-                        <li>Text Overlay</li>
+                        <li id="new-text-overlay">Text Overlay</li>
                     </ul>
+                </div>
+
+                <div id="tool-inputs-container">
+                    <p class="tool-controls-ui-title">Text Overlay</p>
+
+                    <form class="tools-controls-ui-form text-overlay-form">
+
+                        <label for="overlayName">Name</label>
+                        <input name="overlayName" type="text"  placeholder="Text Overlay">
+
+                        <label for="elementType">HTML Type</label>
+                        <input name="elementType" type="text">
+
+                        <label for="overlayText">Text</label>
+                        <input name="overlayText" type="text">
+
+                        <label for="color">Color</label>
+                        <input name="color" type="color">
+
+                        <label for="color">Background Color</label>
+                        <input name="bgColor" type="color">
+
+                        <button id="create-text-overlay-button">Create</button>
+                    </form>
                 </div>
 
                 <!--  Active/created Items  -->
                 <div id="active-tools">
                     <p>Active</p>
-                    <ul>
-                        <li>My Text Overlay</li> <!-- Can give custom name -->
+                    <ul id="created-text-overlays">Overlays
+                        <li>My Text Overlay
                             <ul>
                                 <li>Show / Hide</li>
                                 <li>Edit</li>
                                 <li>Delete</li>
                             </ul>
+                        </li>
                     </ul>
                 </div>
 
