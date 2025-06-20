@@ -2,3 +2,12 @@ CSS
 - style.css is for the main page
 - scenelab.css is for the tooling and features
 - themes/ overwrite the defaults of scenelab
+
+TOOLS
+
+User Defined Content via Tools, eg: Text Overlay
+
+    Text Overlay
+
+- Add a script that is a user defined tool that interacts with either
+  the canvas or uses the Scene Lab functions to 'do things'

@@ -27,13 +27,53 @@
         <section id="scene-lab-tools">
 
             <p>tools</p>
+            
+            <div class="grid">
+                <div>
+                    <p>Text Overlays</p>
+                    <button class="outline" id="brb-button"> BRB... </button>
+                </div>
+
+                <div>
+                    <p>Create</p>
+                    <!--  TODO button dropdown thing  -->
+                    <button class="outline" id="create-new-button"> New </button>
+
+                    <ul>
+                    <!--  Create div, with settings/params via user UI,
+                          and append to #default-scene -> #default-text-overlay-wrapper -->
+                        <li>Text Overlay</li>
+                    </ul>
+                </div>
+
+                <!--  Active/created Items  -->
+                <div id="active-tools">
+                    <p>Active</p>
+                    <ul>
+                        <li>My Text Overlay</li> <!-- Can give custom name -->
+                            <ul>
+                                <li>Show / Hide</li>
+                                <li>Edit</li>
+                                <li>Delete</li>
+                            </ul>
+                    </ul>
+                </div>
+
+            </div>
 
         </section>
 
         <section id="default-scene" class="container-fluid">
             <p>default scene</p>
-            <canvas id="scene-lab-main-canvas"></canvas>    
+
+            <!--  This is where text overlays land -->
+            <div id="default-text-overlay-wrapper"></div>
+
+            <canvas id="scene-lab-main-canvas"></canvas>
         </section>
 
     </main>
+
+    <script defer src="js\canvas-default-pattern-anim.js"></script>
+    <script defer src="js/scenelab.js"></script>
   </body>

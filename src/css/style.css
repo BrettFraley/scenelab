@@ -8,17 +8,18 @@ body {
 }
 
 #scene-lab-tools {
-    height: 25vh;
     border: solid 3px #008fcc;
+    padding: 20px;
 }
 
 #default-scene {
     min-width: 100vw;
     min-height: 90vh;
+    border: solid 3px #008fcc
 }
 
-#scene-lab-main {
-    min-width: 100vw;
+#scene-lab-main-canvas {
+    /* min-width: 100vw; */
     min-height: 500px;
-    border: solid 3px #008fcc
+    border: solid 3px lime;
 }
