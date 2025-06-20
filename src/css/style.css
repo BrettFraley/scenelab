@@ -1,0 +1,24 @@
+body {
+    background-color: #111;
+    color: #eee;
+}
+
+#scene-lab-nav {
+    height: 50px;
+}
+
+#scene-lab-tools {
+    height: 25vh;
+    border: solid 3px #008fcc;
+}
+
+#default-scene {
+    min-width: 100vw;
+    min-height: 90vh;
+}
+
+#scene-lab-main {
+    min-width: 100vw;
+    min-height: 500px;
+    border: solid 3px #008fcc
+}
